@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aarti &amp; Lokesh - Wedding Invitation</title>
+<meta name="description" content="Aarti &amp; Lokesh Wedding Invitation">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%9E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Gurmukhi:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Floating controls -->
+<div class="floating-bar">
+  <select id="langSwitch" aria-label="Language">
+    <option value="hi" selected>हिंदी</option>
+    <option value="en">English</option>
+    <option value="pa">ਪੰਜਾਬੀ</option>
+  </select>
+  <button id="musicToggle" class="round-btn" title="Toggle music" aria-label="Toggle background music">
+    <svg id="musicIconOn" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+    <svg id="musicIconOff" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.8"/><line x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="1.8"/></svg>
+  </button>
+</div>
+<audio id="bgMusic" loop preload="none" src="assets/audio/bg-music.mp3"></audio>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-deco top-left" aria-hidden="true">🌸</div>
+  <div class="hero-deco top-right" aria-hidden="true">🌸</div>
+  <div class="hero-content">
+    <p class="pre-title" data-i18n="hero_pre">श्री गणेशाय नमः</p>
+    <h1 class="couple-names">Aarti <span class="amp">&amp;</span> Lokesh</h1>
+    <p class="hero-subtitle" data-i18n="hero_subtitle">अपने परिवारों के साथ, हम आपको अपनी शादी में शामिल होने का न्योता देते हैं</p>
+    <div class="save-date">
+      <span data-i18n="hero_date_label">यह तारीख़ याद रखें</span>
+      <strong>20 नवंबर 2026</strong>
+    </div>
+    <a href="#events" class="scroll-cue" aria-label="Scroll to details">↓</a>
+  </div>
+</header>
+
+<!-- COUNTDOWN -->
+<section class="countdown-section">
+  <h2 data-i18n="countdown_title">हमारे बड़े दिन की उलटी गिनती</h2>
+  <div class="countdown" id="countdown">
+    <div class="count-box"><span id="cd-days">00</span><small data-i18n="countdown_days">दिन</small></div>
+    <div class="count-box"><span id="cd-hours">00</span><small data-i18n="countdown_hours">घंटे</small></div>
+    <div class="count-box"><span id="cd-mins">00</span><small data-i18n="countdown_mins">मिनट</small></div>
+    <div class="count-box"><span id="cd-secs">00</span><small data-i18n="countdown_secs">सेकंड</small></div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="events-section">
+  <h2 data-i18n="events_title">समारोह</h2>
+
+  <div class="event-card">
+    <div class="event-icon" aria-hidden="true">💍</div>
+    <h3 data-i18n="event_engagement">सगाई</h3>
+    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 16 नवंबर 2026, शाम 7:00 बजे</p>
+    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: Euphoria Banquet, F-3, Udyog Nagar, Peeragarhi, Delhi - 110041</p>
+    <div class="map-embed">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Euphoria+Banquet+F-3+Udyog+Nagar+Peeragarhi+Delhi+110041&output=embed"
+        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+    </div>
+    <div class="event-actions">
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/maps/dir/?api=1&destination=Euphoria%20Banquet%2C%20F-3%2C%20opposite%20Metro%20Pillar%20No%20310%2C%20Udyog%20Nagar%2C%20Industrial%20Area%2C%20Peeragarhi%2C%20Delhi%2C%20110041"
+        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Engagement&dates=20261116T190000/20261116T220000&ctz=Asia/Kolkata&location=Euphoria%20Banquet%2C%20Peeragarhi%2C%20Delhi&details=Engagement%20Ceremony"
+        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
+    </div>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon" aria-hidden="true">🎶</div>
+    <h3 data-i18n="event_sangeet">संगीत और कीर्तन</h3>
+    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 19 नवंबर 2026, सुबह 11:00 बजे</p>
+    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: लोकेश निवास, हाउस नं. 438, गली नं. 24, कोटला विहार फेज़ 2, दिल्ली - 110043</p>
+    <div class="map-embed">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=House+No+438+Gali+No+24+Kotla+Vihar+Phase+2+Delhi+110043&output=embed"
+        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+    </div>
+    <div class="event-actions">
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/maps/dir/?api=1&destination=House%20No.%20438%2C%20Gali%20No.%2024%2C%20Kotla%20Vihar%20Phase%202%2C%20Delhi%2C%20110043"
+        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Sangeet%20%26%20Kirtan&dates=20261119T110000/20261119T140000&ctz=Asia/Kolkata&location=Kotla%20Vihar%20Phase%202%2C%20Delhi&details=Sangeet%20%26%20Kirtan"
+        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
+    </div>
+  </div>
+
+  <div class="event-card">
+    <div class="event-icon" aria-hidden="true">🌼</div>
+    <h3 data-i18n="event_haldi_mehndi">हल्दी और मेहंदी</h3>
+    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 19 नवंबर 2026, शाम 5:00 बजे</p>
+    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: लोकेश निवास, हाउस नं. 438, गली नं. 24, कोटला विहार फेज़ 2, दिल्ली - 110043</p>
+    <div class="map-embed">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=House+No+438+Gali+No+24+Kotla+Vihar+Phase+2+Delhi+110043&output=embed"
+        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+    </div>
+    <div class="event-actions">
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/maps/dir/?api=1&destination=House%20No.%20438%2C%20Gali%20No.%2024%2C%20Kotla%20Vihar%20Phase%202%2C%20Delhi%2C%20110043"
+        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Haldi%20%26%20Mehndi&dates=20261119T170000/20261119T200000&ctz=Asia/Kolkata&location=Kotla%20Vihar%20Phase%202%2C%20Delhi&details=Haldi%20%26%20Mehndi%20Ceremony"
+        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
+    </div>
+  </div>
+
+  <div class="event-card highlight">
+    <div class="event-icon" aria-hidden="true">👰</div>
+    <h3 data-i18n="event_wedding">विवाह समारोह</h3>
+    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 20 नवंबर 2026, शाम 7:00 बजे</p>
+    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: रानी तालाब, बत्तख चौक, जींद, हरियाणा</p>
+    <div class="map-embed">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Rani+Talab+Battakh+Chowk+Jind+Haryana&output=embed"
+        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+    </div>
+    <div class="event-actions">
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/maps/dir/?api=1&destination=Rani%20Talab%2C%20Battakh%20Chowk%2C%20Jind%2C%20Haryana"
+        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Wedding&dates=20261120T190000/20261120T230000&ctz=Asia/Kolkata&location=Rani%20Talab%2C%20Battakh%20Chowk%2C%20Jind%2C%20Haryana&details=Wedding%20Ceremony"
+        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <h2 data-i18n="gallery_title">हमारे पल</h2>
+  <p class="gallery-hint" data-i18n="gallery_hint">(यहाँ जल्द ही हमारी तस्वीरें जोड़ी जाएंगी)</p>
+  <div class="gallery-grid">
+    <!-- Replace each .placeholder div's inner content with <img src="assets/img/photo1.jpg" alt=""> to add real photos -->
+    <div class="gallery-item placeholder">🌸</div>
+    <div class="gallery-item placeholder">💐</div>
+    <div class="gallery-item placeholder">💞</div>
+    <div class="gallery-item placeholder">🌺</div>
+    <div class="gallery-item placeholder">🕊️</div>
+    <div class="gallery-item placeholder">🌷</div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp-section">
+  <h2 data-i18n="rsvp_title">आरएसवीपी</h2>
+  <p data-i18n="rsvp_subtitle">कृपया अपनी उपस्थिति की पुष्टि करें, यह हमारे लिए बहुत मायने रखता है</p>
+  <div class="rsvp-actions">
+    <a class="btn btn-solid" target="_blank" rel="noopener"
+      href="https://wa.me/919560122303?text=Hi%2C%20I%20would%20like%20to%20RSVP%20for%20Aarti%20%26%20Lokesh%27s%20wedding!"
+      data-i18n="whatsapp_btn">व्हाट्सएप पर संदेश भेजें</a>
+    <a class="btn btn-outline" href="tel:+919560122303" data-i18n="call_btn">कॉल करें</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <h2 data-i18n="contact_title">संपर्क करें</h2>
+  <ul class="contact-list">
+    <li><strong>Kamal</strong> - <a href="tel:+919560122303">+91 95601 22303</a></li>
+  </ul>
+</section>
+
+<footer class="footer">
+  <p data-i18n="footer_text">आपकी उपस्थिति ही हमारे लिए सबसे बड़ा उपहार है</p>
+  <p class="footer-names" data-i18n="footer_names">आरती और लोकेश</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
