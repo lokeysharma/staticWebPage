@@ -13,7 +13,7 @@
   // Toggle both ways so the animation replays on every page change
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => e.target.classList.toggle("in", e.isIntersecting));
-  }, { threshold: 0.12 });
+  }, { threshold: 0.05, rootMargin: "0px 0px 10% 0px" });
   items.forEach(el => io.observe(el));
 })();
 

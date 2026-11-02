@@ -40,7 +40,7 @@ p, h1, h2 { margin: 0; }
   padding: max(18px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(40px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 0;
 }
 
 /* Floating music button */
@@ -55,7 +55,7 @@ p, h1, h2 { margin: 0; }
 /* Page-change animations: re-run each time a page enters the viewport */
 .cover, .vellum, .card { scroll-snap-align: start; scroll-margin-top: 10px; }
 
-.js .reveal { opacity: 0; transform: perspective(1000px) rotateX(-14deg) translateY(50px) scale(.96); transform-origin: 50% 0;
+.js .reveal { opacity: 0; transform: perspective(1000px) rotateX(-8deg) translateY(28px) scale(.98); transform-origin: 50% 0;
   transition: opacity .9s ease, transform 1s cubic-bezier(.2, .8, .2, 1); }
 .reveal.in { opacity: 1; transform: none; }
 
@@ -70,7 +70,7 @@ p, h1, h2 { margin: 0; }
 .toran-r { transform-origin: 100% 0; animation: swing 4.5s ease-in-out -2s infinite; }
 
 @keyframes shine { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-.js .cover.reveal { transform: scale(.92); }
+.js .cover.reveal { transform: none; }
 .cover.reveal.in { transform: none; }
 .cover.in .plaque::after {
   content: ''; position: absolute; inset: 0;
@@ -83,7 +83,6 @@ p, h1, h2 { margin: 0; }
 .vellum.reveal.in { clip-path: inset(0 0 0 0); }
 
 /* ---------- COVER ---------- */
-.cover, .vellum { min-height: calc(100svh - 36px); }
 .cover {
   aspect-ratio: 4 / 5;
   padding: 0;
@@ -138,7 +137,7 @@ p, h1, h2 { margin: 0; }
 
 /* ---------- VELLUM ---------- */
 .vellum {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
   position: relative;
   border-radius: 4px;
   background-color: #f6f0dc;
@@ -230,13 +229,20 @@ p, h1, h2 { margin: 0; }
 .venue-addr.wide { margin: 6px auto 8px; max-width: 440px; }
 
 /* Location & calendar */
-.loc {
-  display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
-  min-height: 44px;
-  margin-top: 16px; padding: 8px 12px; text-decoration: none; color: var(--maroon);
-  border: 1.5px solid var(--maroon); border-radius: 4px; font-size: .7rem; letter-spacing: .1em;
-  text-transform: uppercase;
+@keyframes pulse {
+  0% { box-shadow: 0 4px 14px rgba(138, 36, 71, .35), 0 0 0 0 rgba(201, 151, 74, .65); }
+  70% { box-shadow: 0 4px 14px rgba(138, 36, 71, .35), 0 0 0 14px rgba(201, 151, 74, 0); }
+  100% { box-shadow: 0 4px 14px rgba(138, 36, 71, .35), 0 0 0 0 rgba(201, 151, 74, 0); }
 }
+.loc {
+  display: inline-flex; flex-direction: row; align-items: center; justify-content: center; gap: 10px;
+  min-height: 48px;
+  margin-top: 18px; padding: 10px 22px; text-decoration: none;
+  color: #fff7ea; background: linear-gradient(135deg, var(--maroon), var(--maroon-deep));
+  border: 2px solid #e0b869; border-radius: 999px; font-size: .9rem; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; animation: pulse 2.2s ease-out infinite;
+}
+.loc svg { width: 26px; height: 26px; flex: none; }
 .cal {
   display: block; margin: 10px auto 0; width: fit-content; padding: 10px 6px;
   color: var(--maroon); font-size: .85rem; letter-spacing: .08em; text-decoration: underline;
@@ -268,6 +274,9 @@ p, h1, h2 { margin: 0; }
 .btn.solid { background: var(--maroon); color: #fff7ea; }
 .footer-line { margin-top: 18px; letter-spacing: .1em; text-transform: uppercase; }
 
+/* Pages join into one continuous sheet */
+.sheet > * { border-radius: 0; box-shadow: 10px 0 14px -12px rgba(80, 60, 20, .35), -10px 0 14px -12px rgba(80, 60, 20, .35); }
+
 @media (max-width: 380px) {
   .card { padding: 30px 14px 18px; }
   .date-block { column-gap: 8px; }
@@ -279,7 +288,6 @@ p, h1, h2 { margin: 0; }
 /* Desktop / Windows: scale the phone layout up and keep it centred on a themed backdrop */
 @media (min-width: 900px) {
   .sheet { --z: 1.25; zoom: var(--z); padding-top: 28px; padding-bottom: 60px; }
-  .cover, .vellum { min-height: calc(100dvh / var(--z) - 56px); }
 }
 @media (min-width: 1500px) {
   .sheet { --z: 1.5; }
@@ -290,5 +298,5 @@ p, h1, h2 { margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; scroll-snap-type: none; }
   .js .reveal, .js .card.reveal > *, .js .card.reveal .toran { transition: none; opacity: 1; transform: none; clip-path: none; }
-  .toran-l, .toran-r, .cover.in .plaque::after { animation: none; }
+  .toran-l, .toran-r, .cover.in .plaque::after, .loc { animation: none; }
 }
