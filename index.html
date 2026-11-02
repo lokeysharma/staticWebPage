@@ -1,25 +1,135 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aarti &amp; Lokesh - Wedding Invitation</title>
-<meta name="description" content="Aarti &amp; Lokesh Wedding Invitation">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%9E%3C/text%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#e4dcc8">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Lokesh weds Aarti - Wedding Invitation</title>
+<meta name="description" content="Lokesh weds Aarti - Wedding Invitation">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lokesh weds Aarti - Wedding Invitation">
+<meta property="og:description" content="Engagement 16 Nov 2026, Wedding 19-20 Nov 2026. You are cordially invited.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238a2447'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23f3e3b0' font-family='serif'%3EL%26A%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Gurmukhi:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Cormorant+SC:wght@500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- Floating controls -->
-<div class="floating-bar">
-  <select id="langSwitch" aria-label="Language">
-    <option value="hi" selected>हिंदी</option>
-    <option value="en">English</option>
-    <option value="pa">ਪੰਜਾਬੀ</option>
-  </select>
+<!-- Reusable ornaments -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="-10 -10 20 20">
+      <g fill="currentColor">
+        <circle r="3.2"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-6.5" rx="2" ry="3.4" transform="rotate(315)"/>
+      </g>
+    </symbol>
+
+    <symbol id="toran" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-linecap="round">
+        <path d="M0 16 Q70 64 190 20" stroke-width="1.6"/>
+        <path d="M0 6 Q62 44 150 10" stroke-width="1.6" stroke-dasharray="0.1 5" />
+        <path d="M0 26 Q70 74 190 30" stroke-width="3" stroke-dasharray="0.1 6"/>
+        <line x1="28" y1="42" x2="28" y2="190" stroke-width="1.4"/>
+        <line x1="56" y1="50" x2="56" y2="140" stroke-width="1.4"/>
+        <line x1="86" y1="56" x2="86" y2="96" stroke-width="1.4"/>
+      </g>
+      <g fill="currentColor">
+        <use href="#star" x="19" y="58" width="18" height="18"/>
+        <use href="#star" x="19" y="94" width="18" height="18"/>
+        <use href="#star" x="19" y="130" width="18" height="18"/>
+        <use href="#star" x="19" y="168" width="18" height="18"/>
+        <use href="#star" x="47" y="66" width="18" height="18"/>
+        <use href="#star" x="47" y="102" width="18" height="18"/>
+        <use href="#star" x="47" y="124" width="18" height="18"/>
+        <use href="#star" x="77" y="76" width="18" height="18"/>
+      </g>
+    </symbol>
+
+    <symbol id="kalash" viewBox="0 0 80 96">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+        <ellipse cx="40" cy="22" rx="8" ry="10"/>
+        <path d="M40 32 Q22 28 14 10 Q30 12 40 28"/>
+        <path d="M40 32 Q58 28 66 10 Q50 12 40 28"/>
+        <path d="M40 32 Q30 20 28 2 Q40 10 40 30"/>
+        <path d="M40 32 Q50 20 52 2 Q40 10 40 30"/>
+        <rect x="22" y="40" width="36" height="7" rx="3"/>
+        <path d="M24 47 Q16 66 26 82 Q40 90 54 82 Q64 66 56 47"/>
+        <rect x="28" y="84" width="24" height="6" rx="2"/>
+      </g>
+      <text x="40" y="74" font-size="22" text-anchor="middle" fill="currentColor" font-family="serif">&#x534D;</text>
+    </symbol>
+
+    <symbol id="groom" viewBox="0 0 60 140">
+      <path d="M30 4 C19 4 15 13 17 21 L43 21 C45 13 41 4 30 4Z" fill="currentColor"/>
+      <path d="M30 4 Q34 -2 38 2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      <ellipse cx="30" cy="30" rx="7" ry="8.5" fill="#f4e4d4" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M17 42 L43 42 L47 112 L13 112Z" fill="currentColor" opacity=".88"/>
+      <path d="M22 42 Q8 72 14 106" stroke="#d8a85a" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M17 42 Q4 56 10 74" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M19 112 L19 134 M41 112 L41 134" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="bride" viewBox="0 0 60 140">
+      <path d="M30 4 C15 6 11 30 13 62 L47 62 C49 30 45 6 30 4Z" fill="currentColor" opacity=".55"/>
+      <ellipse cx="30" cy="28" rx="6.5" ry="8" fill="#f4e4d4" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M22 42 L38 42 L40 62 L20 62Z" fill="currentColor"/>
+      <path d="M20 62 L40 62 L58 132 L2 132Z" fill="currentColor" opacity=".9"/>
+      <path d="M8 118 L52 118" stroke="#d8a85a" stroke-width="2"/>
+      <path d="M18 62 Q10 52 12 44" stroke="currentColor" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="spray" viewBox="0 0 140 140">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+        <path d="M6 136 Q40 90 130 14"/>
+        <path d="M30 108 Q38 84 62 80 Q58 100 30 108Z" fill="#d9d6cf"/>
+        <path d="M56 82 Q66 58 92 56 Q86 78 56 82Z" fill="#d9d6cf"/>
+        <path d="M82 56 Q92 34 118 34 Q110 54 82 56Z" fill="#d9d6cf"/>
+        <path d="M28 112 Q18 92 0 94 Q6 112 28 112Z" fill="#d9d6cf"/>
+        <path d="M54 88 Q50 66 32 62 Q30 80 54 88Z" fill="#d9d6cf"/>
+        <circle cx="52" cy="70" r="12" fill="#c9ccd6"/>
+        <circle cx="52" cy="70" r="5" fill="#fff"/>
+        <circle cx="88" cy="42" r="14" fill="#c9ccd6"/>
+        <circle cx="88" cy="42" r="6" fill="#fff"/>
+        <circle cx="116" cy="22" r="8" fill="#c9ccd6"/>
+        <circle cx="22" cy="104" r="8" fill="#c9ccd6"/>
+      </g>
+    </symbol>
+
+    <symbol id="swirl" viewBox="0 0 320 220">
+      <g fill="none" stroke="#c9974a" stroke-width="3.2" stroke-linecap="round">
+        <path d="M4 150 C40 110 90 130 100 170 C108 200 70 210 58 190 C48 172 68 160 80 172"/>
+        <path d="M4 196 C30 170 60 190 56 214"/>
+        <path d="M100 170 C140 150 170 120 200 130 C230 140 226 180 200 178 C186 176 186 160 198 160"/>
+        <path d="M120 214 C170 190 220 200 262 178 C290 164 300 140 290 112"/>
+        <path d="M200 130 C220 90 250 70 280 80"/>
+      </g>
+      <g fill="#c9974a">
+        <path d="M110 170 C120 130 156 112 176 130 C160 150 136 170 110 170Z"/>
+        <path d="M110 172 C140 176 170 196 178 218 C150 218 120 200 110 172Z"/>
+        <path d="M60 188 C70 160 100 150 120 160 C110 180 88 192 60 188Z"/>
+        <path d="M230 130 C240 100 270 92 292 104 C284 126 260 136 230 130Z"/>
+        <path d="M262 178 C276 160 300 158 316 168 C304 186 282 190 262 178Z"/>
+        <circle cx="190" cy="150" r="6"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Music -->
+<div class="floating-bar" hidden>
   <button id="musicToggle" class="round-btn" title="Toggle music" aria-label="Toggle background music">
     <svg id="musicIconOn" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
     <svg id="musicIconOff" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.8"/><line x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="1.8"/></svg>
@@ -27,157 +137,174 @@
 </div>
 <audio id="bgMusic" loop preload="none" src="assets/audio/bg-music.mp3"></audio>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-deco top-left" aria-hidden="true">🌸</div>
-  <div class="hero-deco top-right" aria-hidden="true">🌸</div>
-  <div class="hero-content">
-    <p class="pre-title" data-i18n="hero_pre">श्री गणेशाय नमः</p>
-    <h1 class="couple-names">Aarti <span class="amp">&amp;</span> Lokesh</h1>
-    <p class="hero-subtitle" data-i18n="hero_subtitle">अपने परिवारों के साथ, हम आपको अपनी शादी में शामिल होने का न्योता देते हैं</p>
-    <div class="save-date">
-      <span data-i18n="hero_date_label">यह तारीख़ याद रखें</span>
-      <strong>20 नवंबर 2026</strong>
+<main class="sheet">
+
+  <!-- COVER -->
+  <section class="cover reveal">
+    <div class="cover-frame">
+      <svg class="spray spray-tr" aria-hidden="true"><use href="#spray"/></svg>
+      <svg class="spray spray-bl" aria-hidden="true"><use href="#spray"/></svg>
+      <div class="cover-medallion" aria-hidden="true"></div>
+      <div class="plaque">
+        <span class="plaque-text"><span>Lokesh</span><small>weds</small><span>Aarti</span></span>
+      </div>
     </div>
-    <a href="#events" class="scroll-cue" aria-label="Scroll to details">↓</a>
-  </div>
-</header>
+  </section>
 
-<!-- COUNTDOWN -->
-<section class="countdown-section">
-  <h2 data-i18n="countdown_title">हमारे बड़े दिन की उलटी गिनती</h2>
-  <div class="countdown" id="countdown">
-    <div class="count-box"><span id="cd-days">00</span><small data-i18n="countdown_days">दिन</small></div>
-    <div class="count-box"><span id="cd-hours">00</span><small data-i18n="countdown_hours">घंटे</small></div>
-    <div class="count-box"><span id="cd-mins">00</span><small data-i18n="countdown_mins">मिनट</small></div>
-    <div class="count-box"><span id="cd-secs">00</span><small data-i18n="countdown_secs">सेकंड</small></div>
-  </div>
-</section>
+  <!-- VELLUM -->
+  <section class="vellum reveal">
+    <svg class="vellum-swirl" aria-hidden="true"><use href="#swirl"/></svg>
+    <p class="vellum-note">Scroll to open the invitation</p>
+  </section>
 
-<!-- EVENTS -->
-<section id="events" class="events-section">
-  <h2 data-i18n="events_title">समारोह</h2>
+  <!-- ENGAGEMENT CARD -->
+  <section class="card reveal" id="engagement">
+    <svg class="toran toran-l" aria-hidden="true"><use href="#toran"/></svg>
+    <svg class="toran toran-r" aria-hidden="true"><use href="#toran"/></svg>
 
-  <div class="event-card">
-    <div class="event-icon" aria-hidden="true">💍</div>
-    <h3 data-i18n="event_engagement">सगाई</h3>
-    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 16 नवंबर 2026, शाम 7:00 बजे</p>
-    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: Euphoria Banquet, F-3, Udyog Nagar, Peeragarhi, Delhi - 110041</p>
-    <div class="map-embed">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Euphoria+Banquet+F-3+Udyog+Nagar+Peeragarhi+Delhi+110041&output=embed"
-        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+    <svg class="kalash" aria-hidden="true"><use href="#kalash"/></svg>
+    <p class="blessing">|| Shree Ganeshaya Namah ||</p>
+    <p class="shloka">Vighna haran mangal karan, Shri Ganpati ji Maharaj,<br>Pratham nimantran aapko, pooran keeje kaaj</p>
+
+    <p class="hosts">Smt. Shashi Devi &amp; Sh. Somnath</p>
+    <p class="invite">Cordially invite you for the Engagement Ceremony<br>of their loving son</p>
+
+    <h2 class="name">Lokesh</h2>
+    <p class="lineage">(Grand S/o Late Smt. Shanti Devi &amp; Late Sh. Desh Raj)</p>
+    <p class="with">with</p>
+    <h2 class="name">Aarti</h2>
+    <p class="lineage">(D/o Smt. Saroj &amp; Sh. Surender Kumar)<br>R/o Rohtak Road, Durga Colony, Bypass Jind, Haryana</p>
+
+    <div class="date-block">
+      <span class="weekday">Monday</span>
+      <span class="day">16</span>
+      <span class="month">November</span>
+      <span class="year">2026</span>
     </div>
-    <div class="event-actions">
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/maps/dir/?api=1&destination=Euphoria%20Banquet%2C%20F-3%2C%20opposite%20Metro%20Pillar%20No%20310%2C%20Udyog%20Nagar%2C%20Industrial%20Area%2C%20Peeragarhi%2C%20Delhi%2C%20110041"
-        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Engagement&dates=20261116T190000/20261116T220000&ctz=Asia/Kolkata&location=Euphoria%20Banquet%2C%20Peeragarhi%2C%20Delhi&details=Engagement%20Ceremony"
-        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
-    </div>
-  </div>
 
-  <div class="event-card">
-    <div class="event-icon" aria-hidden="true">🎶</div>
-    <h3 data-i18n="event_sangeet">संगीत और कीर्तन</h3>
-    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 19 नवंबर 2026, सुबह 11:00 बजे</p>
-    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: लोकेश निवास, हाउस नं. 438, गली नं. 24, कोटला विहार फेज़ 2, दिल्ली - 110043</p>
-    <div class="map-embed">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=House+No+438+Gali+No+24+Kotla+Vihar+Phase+2+Delhi+110043&output=embed"
-        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+    <div class="rows">
+      <p class="row"><span>Engagement</span><i></i><span>7:00 P.M.</span></p>
+      <p class="row"><span>Dinner</span><i></i><span>8:00 P.M.</span></p>
     </div>
-    <div class="event-actions">
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/maps/dir/?api=1&destination=House%20No.%20438%2C%20Gali%20No.%2024%2C%20Kotla%20Vihar%20Phase%202%2C%20Delhi%2C%20110043"
-        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Sangeet%20%26%20Kirtan&dates=20261119T110000/20261119T140000&ctz=Asia/Kolkata&location=Kotla%20Vihar%20Phase%202%2C%20Delhi&details=Sangeet%20%26%20Kirtan"
-        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
+
+    <p class="venue-label">Venue:</p>
+    <p class="venue-name">Euphoria Banquet</p>
+    <p class="venue-addr">F-3, Udyog Nagar, Peeragarhi, Delhi-110041</p>
+
+    <a class="loc" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/dir/?api=1&destination=Euphoria%20Banquet%2C%20F-3%2C%20Udyog%20Nagar%2C%20Peeragarhi%2C%20Delhi%2C%20110041">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <span>Tap for location</span>
+    </a>
+    <a class="cal" target="_blank" rel="noopener"
+       href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lokesh%20weds%20Aarti%20-%20Engagement&dates=20261116T190000/20261116T220000&ctz=Asia/Kolkata&location=Euphoria%20Banquet%2C%20Peeragarhi%2C%20Delhi&details=Engagement%20Ceremony">Add to calendar</a>
+
+    <div class="card-foot">
+      <p><b>R.S.V.P.:</b><br>Sharma Family</p>
+      <p>With best compliments from:<br>All Relatives &amp; Friends</p>
     </div>
-  </div>
+  </section>
 
-  <div class="event-card">
-    <div class="event-icon" aria-hidden="true">🌼</div>
-    <h3 data-i18n="event_haldi_mehndi">हल्दी और मेहंदी</h3>
-    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 19 नवंबर 2026, शाम 5:00 बजे</p>
-    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: लोकेश निवास, हाउस नं. 438, गली नं. 24, कोटला विहार फेज़ 2, दिल्ली - 110043</p>
-    <div class="map-embed">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=House+No+438+Gali+No+24+Kotla+Vihar+Phase+2+Delhi+110043&output=embed"
-        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+  <!-- WEDDING CARD -->
+  <section class="card reveal" id="wedding">
+    <svg class="toran toran-l" aria-hidden="true"><use href="#toran"/></svg>
+    <svg class="toran toran-r" aria-hidden="true"><use href="#toran"/></svg>
+
+    <svg class="kalash" aria-hidden="true"><use href="#kalash"/></svg>
+    <p class="blessing">|| Shree Ganeshaya Namah ||</p>
+    <p class="shloka">Vakratunda Mahakaya Suryakoti Samaprabha,<br>Nirvighnam Kurume Deva Sarvakaryeshu Sarvada</p>
+
+    <p class="hosts">Smt. Shashi Devi &amp; Sh. Somnath</p>
+    <p class="invite">Cordially invite you to grace the auspicious occasion of the<br>Wedding Ceremony of their beloved son</p>
+
+    <div class="figures">
+      <svg class="fig fig-groom" aria-hidden="true"><use href="#groom"/></svg>
+      <div class="figures-names">
+        <h2 class="name">Lokesh</h2>
+        <p class="lineage">(Grand S/o Late Smt. Shanti Devi &amp; Late Sh. Desh Raj)</p>
+        <p class="with">with</p>
+        <h2 class="name">Aarti</h2>
+        <p class="lineage">(D/o Smt. Saroj &amp; Sh. Surender Kumar)<br>R/o Rohtak Road, Durga Colony, Bypass Jind, Haryana</p>
+      </div>
+      <svg class="fig fig-bride" aria-hidden="true"><use href="#bride"/></svg>
     </div>
-    <div class="event-actions">
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/maps/dir/?api=1&destination=House%20No.%20438%2C%20Gali%20No.%2024%2C%20Kotla%20Vihar%20Phase%202%2C%20Delhi%2C%20110043"
-        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Haldi%20%26%20Mehndi&dates=20261119T170000/20261119T200000&ctz=Asia/Kolkata&location=Kotla%20Vihar%20Phase%202%2C%20Delhi&details=Haldi%20%26%20Mehndi%20Ceremony"
-        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
+
+    <div class="date-block">
+      <span class="weekday">Thursday</span>
+      <span class="day">19</span>
+      <span class="month">November</span>
+      <span class="year">2026</span>
     </div>
-  </div>
 
-  <div class="event-card highlight">
-    <div class="event-icon" aria-hidden="true">👰</div>
-    <h3 data-i18n="event_wedding">विवाह समारोह</h3>
-    <p class="event-when"><span data-i18n="event_date_label">कब</span>: 20 नवंबर 2026, शाम 7:00 बजे</p>
-    <p class="event-where"><span data-i18n="event_venue_label">कहाँ</span>: रानी तालाब, बत्तख चौक, जींद, हरियाणा</p>
-    <div class="map-embed">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Rani+Talab+Battakh+Chowk+Jind+Haryana&output=embed"
-        width="100%" height="220" style="border:0;" allowfullscreen></iframe>
+    <div class="rows">
+      <p class="row"><span>Kirtan</span><i></i><span>11:00 A.M.</span></p>
+      <p class="row"><span>Sangeet, Haldi &amp; Mehendi</span><i></i><span>8:00 P.M.</span></p>
     </div>
-    <div class="event-actions">
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/maps/dir/?api=1&destination=Rani%20Talab%2C%20Battakh%20Chowk%2C%20Jind%2C%20Haryana"
-        data-i18n="directions_btn">दिशा-निर्देश पाएं</a>
-      <a class="btn btn-outline" target="_blank" rel="noopener"
-        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Aarti%20%26%20Lokesh%20-%20Wedding&dates=20261120T190000/20261120T230000&ctz=Asia/Kolkata&location=Rani%20Talab%2C%20Battakh%20Chowk%2C%20Jind%2C%20Haryana&details=Wedding%20Ceremony"
-        data-i18n="calendar_btn">कैलेंडर में जोड़ें</a>
+    <p class="venue-addr wide">At: H. No. 438, Gali No. 24, Kotla Vihar, Phase-2, New Delhi-110043</p>
+
+    <a class="loc" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/dir/?api=1&destination=House%20No.%20438%2C%20Gali%20No.%2024%2C%20Kotla%20Vihar%20Phase%202%2C%20New%20Delhi%2C%20110043">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <span>Tap for location</span>
+    </a>
+    <a class="cal" target="_blank" rel="noopener"
+       href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lokesh%20weds%20Aarti%20-%20Kirtan%2C%20Sangeet%2C%20Haldi%20%26%20Mehendi&dates=20261119T110000/20261119T230000&ctz=Asia/Kolkata&location=Kotla%20Vihar%20Phase%202%2C%20New%20Delhi&details=Kirtan%2011%3A00%20AM%3B%20Sangeet%2C%20Haldi%20%26%20Mehendi%208%3A00%20PM">Add to calendar</a>
+
+    <div class="date-block second">
+      <span class="weekday">Friday</span>
+      <span class="day">20</span>
+      <span class="month">November</span>
+      <span class="year">2026</span>
     </div>
-  </div>
-</section>
 
-<!-- GALLERY -->
-<section class="gallery-section">
-  <h2 data-i18n="gallery_title">हमारे पल</h2>
-  <p class="gallery-hint" data-i18n="gallery_hint">(यहाँ जल्द ही हमारी तस्वीरें जोड़ी जाएंगी)</p>
-  <div class="gallery-grid">
-    <!-- Replace each .placeholder div's inner content with <img src="assets/img/photo1.jpg" alt=""> to add real photos -->
-    <div class="gallery-item placeholder">🌸</div>
-    <div class="gallery-item placeholder">💐</div>
-    <div class="gallery-item placeholder">💞</div>
-    <div class="gallery-item placeholder">🌺</div>
-    <div class="gallery-item placeholder">🕊️</div>
-    <div class="gallery-item placeholder">🌷</div>
-  </div>
-</section>
+    <div class="rows">
+      <p class="row"><span>Ghurchari</span><i></i><span>4:00 P.M.</span></p>
+      <p class="row"><span>Departure of Barat</span><i></i><span>5:00 P.M.</span></p>
+    </div>
+    <p class="venue-addr wide">Barat will depart from our residence &amp; will proceed to the</p>
 
-<!-- RSVP -->
-<section class="rsvp-section">
-  <h2 data-i18n="rsvp_title">आरएसवीपी</h2>
-  <p data-i18n="rsvp_subtitle">कृपया अपनी उपस्थिति की पुष्टि करें, यह हमारे लिए बहुत मायने रखता है</p>
-  <div class="rsvp-actions">
-    <a class="btn btn-solid" target="_blank" rel="noopener"
-      href="https://wa.me/919560122303?text=Hi%2C%20I%20would%20like%20to%20RSVP%20for%20Aarti%20%26%20Lokesh%27s%20wedding!"
-      data-i18n="whatsapp_btn">व्हाट्सएप पर संदेश भेजें</a>
-    <a class="btn btn-outline" href="tel:+919560122303" data-i18n="call_btn">कॉल करें</a>
-  </div>
-</section>
+    <p class="venue-label">Venue:</p>
+    <p class="venue-name">Tilak Palace</p>
+    <p class="venue-addr">Sabji Mandi, Jind</p>
 
-<!-- CONTACT -->
-<section class="contact-section">
-  <h2 data-i18n="contact_title">संपर्क करें</h2>
-  <ul class="contact-list">
-    <li><strong>Kamal</strong> - <a href="tel:+919560122303">+91 95601 22303</a></li>
-  </ul>
-</section>
+    <a class="loc" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/dir/?api=1&destination=Tilak%20Palace%2C%20Sabji%20Mandi%2C%20Jind%2C%20Haryana">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <span>Tap for location</span>
+    </a>
+    <a class="cal" target="_blank" rel="noopener"
+       href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lokesh%20weds%20Aarti%20-%20Wedding&dates=20261120T160000/20261120T230000&ctz=Asia/Kolkata&location=Tilak%20Palace%2C%20Sabji%20Mandi%2C%20Jind&details=Ghurchari%204%3A00%20PM%3B%20Barat%20departs%205%3A00%20PM">Add to calendar</a>
 
-<footer class="footer">
-  <p data-i18n="footer_text">आपकी उपस्थिति ही हमारे लिए सबसे बड़ा उपहार है</p>
-  <p class="footer-names" data-i18n="footer_names">आरती और लोकेश</p>
-</footer>
+    <div class="card-foot">
+      <p><b>R.S.V.P.:</b><br>Sharma Family</p>
+      <p>With best compliments from:<br>All Relatives &amp; Friends</p>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="card slim reveal">
+    <p class="venue-label">Counting down to the wedding</p>
+    <div class="countdown">
+      <div class="count-box"><span id="cd-days">00</span><small>Days</small></div>
+      <div class="count-box"><span id="cd-hours">00</span><small>Hours</small></div>
+      <div class="count-box"><span id="cd-mins">00</span><small>Minutes</small></div>
+      <div class="count-box"><span id="cd-secs">00</span><small>Seconds</small></div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="card slim reveal">
+    <h2 class="rsvp-title">R.S.V.P.</h2>
+    <p class="invite">Kindly confirm your presence, it means the world to us</p>
+    <div class="rsvp-actions">
+      <a class="btn solid" target="_blank" rel="noopener"
+         href="https://wa.me/919560122303?text=Hi%2C%20I%20would%20like%20to%20RSVP%20for%20Lokesh%20weds%20Aarti%27s%20wedding!">Message on WhatsApp</a>
+      <a class="btn" href="tel:+919560122303">Call Kamal</a>
+    </div>
+    <p class="footer-line">Sharma Family</p>
+  </section>
+
+</main>
 
 <script src="assets/js/script.js"></script>
 </body>
